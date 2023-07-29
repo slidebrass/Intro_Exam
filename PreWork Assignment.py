@@ -12,11 +12,13 @@ hello_name(new_name)
 """Write a python function, first_odds that prints the odd numbers 
     from 1-100 and returns nothing."""
 def first_odds():
-    for value in range(0,100):
+    for value in range():
         if value % 2 == 1:
             print (value)
-first_odds()
+first_odds(0,100)
 print("\n")
+
+
 #Question 3
 """Please write a Python function, max_num_in_list to return the max 
     number of a given list. The first line of the code has been defined
@@ -33,7 +35,9 @@ max_num_in_list(num_list)
     year is divisible by 4, but not divisble by 100, unless it is also
     divisible by 400. The return should be boolean Type (true/false)."""
 def is_leap_year(a_year):
-    if a_year % 4 == 0 and a_year % 100 != 0 or a_year % 400 == 0
+    if a_year % 4 == 0 and 
+    a_year % 100 != 0 or a_year % 400 == 0:
+
 leap_message = input("Please enter a year, and I will tell you if it " +
                          "is a leap year. ")
 
