@@ -11,7 +11,7 @@ hello_name(new_name)
 #Question 2
 """Write a python function, first_odds that prints the odd numbers 
     from 1-100 and returns nothing."""
-def first_odds():
+def first_odds(range):
     for value in range():
         if value % 2 == 1:
             print (value)
@@ -35,8 +35,17 @@ max_num_in_list(num_list)
     year is divisible by 4, but not divisble by 100, unless it is also
     divisible by 400. The return should be boolean Type (true/false)."""
 def is_leap_year(a_year):
-    if a_year % 4 == 0 and 
-    a_year % 100 != 0 or a_year % 400 == 0:
+    if a_year >= 400:
+        if (a_year % 400 == 0) and (a_year % 100 != 0) and (a_year % 4 == 0):
+            return True
+    elif a_year >= 100:
+        if (a_year % 4 == 0) and (a_year % 100 != 0):
+            return True
+    else:
+        if (a_year % 4 == 0):
+            return True
+    if True:
+        print("Yes, this is a leap year.")
 
 leap_message = input("Please enter a year, and I will tell you if it " +
                          "is a leap year. ")
@@ -48,10 +57,10 @@ is_leap_year(leap_message)
     numbers. For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5]
     are not consecutive numbers. The reutrn should be boolean Type."""
 
-def is_consecutive(a_list): 
-    a_list.sort()
-    for item in a_list:
-        if item
+#def is_consecutive(a_list): 
+    #a_list.sort()
+    #for item in a_list:
+        #if item
 
 
-length = len(a_list)
+#length = len(a_list)
